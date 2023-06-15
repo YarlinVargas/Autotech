@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta charset="utf-8">
+    <!-- <script>
+        $(function(){
+            $('#fecha').datepicker({
+                format:'dd/mm/yyyy'
+            });
+        });
+    </script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+  </head>
+
+  <body>
+    <div class="container section">
+        <div class="row">
+            <div class="col s3 m3"></div>
+            <div class="col indigo-text accent-2 s6 m6">
+                <h4>Registrar usuario</h4>
+            </div>
+        </div>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col offset-s3 s6">
+                    <input placeholder="Ingresar nombres" id="tituloPost" type="text" class="validate">
+                    <label for="tituloPost">Nombres</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3 s6">
+                    <textarea placeholder="Ingresar pellidos" id="testarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Apellidos</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3 s6">
+                    <textarea placeholder="Ingresar cedula" id="testarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Cedula</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s3 s6">
+                    <textarea placeholder="Ingresar Fecha de nacimiento dd/mm/yyyy" id="testarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Fecha Nacimiento</label>
+                </div>
+                <!-- <div class="input-field col offset-s3 s6">
+                    <input type="text" class="datepicker" id="fecha">
+                    
+                </div> -->
+            </div>
+            <div class="row">
+            <button class="btn waves-effect yellow darken-2 col offset-s3 s6" type="submit" name="action">Registrarse
+                <i class="material-icons right">send</i>
+            </button>
+            </div>
+            <div class="row">
+                <div class="col s3"></div>
+                <div class="col offset-s3 s6">
+                    <a href="index.html">Regresar</a>
+                </div>
+                <div class="col s3"></div>
+              </div>
+        </form>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
