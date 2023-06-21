@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="indigo accent-2">
+      <div class="nav-wrapper container indigo accent-2">
+        <!-- <a href="#" class="brand-logo right">AUTOTECH</a> -->
+          <img src="images/autotech.jpg" alt="" class="responsive-img right" width="70px" height="70px">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Quienes somos</a></li>
+          <li><a href="badges.html">Servicios</a></li>
+          <li><a href="collapsible.html">Nuestras sedes</a></li>
+          <li><a href="collapsible.html">Como funciona?</a></li>
+        </ul>
+        <ul class="right sidenav" id="mobile-demo">
+          <li><a href="sass.html">Quienes somos</a></li>
+          <li><a href="badges.html">Servicios</a></li>
+          <li><a href="collapsible.html">Nuestras sedes</a></li>
+          <li><a href="collapsible.html">Como funciona?</a></li>
+        </ul>
+      </div>
+      <div class="nav-content black-text">
+        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+          <li class="tab"><a href="#test1">HOME</a></li>
+          <li class="tab"><a href="#test2">CLIENTES</a></li>
+          <li class="tab"><a href="#test3">TRABAJADORES</a></li>
+          <li class="tab"><a class="active" href="#test4">ORDEN DE TRABAJO</a></li>
+          <li class="tab"><a href="#test0">NOTIFICACIONES</a></li>
+        </ul>
+        <div id="test1" class="col s12"><p>Test 1</p>
+          <li class="tab"><a href="inicio.html">Home</a></li>
+        </div>
+        <div id="test2" class="col s12">
+          <h3 class="s12 center-align">Clientes</h3>
+          <div>
+            <div class="row">
+              <p class="col s3 center-align">Numero de Documento</p>
+              <div class="input-field col s6 center-align">
+                <input id="first_name2" type="text" class="validate">
+                <label class="active" for="first_name2">Buscar documento</label>
+              </div>
+              <a class="btn-floating btn-large waves-effect waves-light red  center-align" href="gestion_clientes.html"><i class="material-icons">add</i></a>
+            </div>
+          </div>
+         
+          <table class="table striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>N° Documento</th>
+                <th>N° Celular</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yarlin Vargas</td>
+                <td>1094945261</td>
+                <td>3103780025</td>
+                <td><a href="gestion_clientes.html"><i class="material-icons black-text">edit</i></a></td>
+                <td><i class="material-icons">cancel</i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="test3" class="col s12">
+          <h3 class="s12 center-align">Trabajadores</h3>
+          <div>
+            <div class="row">
+              <p class="col s3 center-align">Numero de Documento</p>
+              <div class="input-field col s6 center-align">
+                <input id="first_name2" type="text" class="validate">
+                <label class="active" for="first_name2">Buscar documento</label>
+              </div>
+              <a class="btn-floating btn-large waves-effect waves-light red  center-align" href="gestion_clientes.html"><i class="material-icons">add</i></a>
+            </div>
+          </div>
+         
+          <table class="table striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>N° Documento</th>
+                <th>N° Celular</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yarlin Vargas</td>
+                <td>1094945261</td>
+                <td>3103780025</td>
+                <td><a href="gestion_clientes.html"><i class="material-icons black-text">edit</i></a></td>
+                <td><i class="material-icons">cancel</i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="test4" class="col s12">
+          <h3 class="s12 center-align">Orden de trabajo existente</h3>
+          <div>
+            <div class="row">
+              <p class="col s3 center-align">Orden de trabajo N°:</p>
+              <div class="input-field col s6 center-align">
+                <input id="orden_number" type="text" class="validate">
+                <label class="active" for="orden_number">Ingresar orden</label>
+              </div>
+            </div>
+            <div class="row">
+              <p class="col s3 center-align">Fecha de ingreso</p>
+                <div class="input-field col s6">
+                    <input type="text" class="datepicker" id="fecha_ingreso" placeholder="fecha de ingreso">
+                </div>
+                <i class="material-icons">event</i>
+            </div>
+            <div class="row">
+              <p class="col s3 center-align">Fecha de salida</p>
+                <div class="input-field col s6">
+                    <input type="text" class="datepicker" id="fecha_salida" placeholder="fecha salida">
+                </div>
+                <i class="material-icons">event</i>
+            </div>
+            <div class="row">
+              <p class="col s3 center-align">Nombre del cliente:</p>
+              <div class="input-field col s6 center-align">
+                <input id="client_name" type="text" class="validate">
+                <label class="active" for="client_name">Ingresar nombre</label>
+              </div>
+            </div>
+  
+            <div class="row">
+              <p class="col s3 center-align">Placa del vehículo:</p>
+              <div class="input-field col s6 center-align">
+                <input id="placa_vehiculo" type="text" class="validate">
+                <label class="active" for="placa_vehiculo">Ingresar placa</label>
+              </div>
+            </div>
+            <div class="row">
+              <p class="col s3 center-align">Motivo ingreso:</p>
+              <div class="input-field col s6 center-align">
+                <input id="motivo" type="text" class="validate">
+                <label class="active" for="motivo">Ingresar motivo</label>
+              </div>
+            </div>
+            <div class="row">
+              <a class="btn waves-effect yellow darken-2 col offset-s3 s6"  href="inicio.html">Generar Nueva Orden de trabajo
+                <!-- <i class="material-icons right">send</i> -->
+              </a>
+            </div>
+        </div>
+        <div id="test0" class="col s12">
+          <h3 class="s12 center-align">Notificaciones</h3>
+          <div>
+            <div class="row">
+              <p class="col s3 center-align">Fecha de mantenimiento</p>
+                <div class="input-field col s6">
+                    <input type="text" class="datepicker" id="fecha" placeholder="fecha">
+                </div>
+                <i class="material-icons">event</i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col offset-s1 s10">
+              <div class="card">
+                <table class="table striped centered">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Email</th>
+                      <th>N° Celular</th>
+                      <th>N°</th>
+                      <th>Fecha último mantenimiento</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Maria R</td>
+                      <td>mramirez@hotmail.com</td>
+                      <td>3050</td>
+                      <td>FH</td>
+                      <td>12/10/2021</td>
+                      <td>
+                        <div class="switch">
+                          <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+            </div>
+           </div>
+           <div class="row">
+            <p class="col offset-s1 s5 center-align">Generar recordatorio por medio de:</p>
+            <div class="input-field col s5">
+              <!-- <label>Browser Select</label> -->
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Llamada telefónica</option>
+                <option value="2">Mensaje de texto</option>
+                <option value="3">Email</option>
+              </select>
+            </div>
+           </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
